@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "encrpytion-documentation"
+version = "0.1.0"
+description = ""
+authors = ["Barrett <barrettbobilin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
+cryptography = "^42.0.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
