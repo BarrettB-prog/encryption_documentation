@@ -8,9 +8,11 @@ and saved for future use.
 """
 
 """Standard and Third Party imports"""
-#from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet
 import pathlib
 import getpass
+import argparse
+
 
 
 def get_enc_secret(file_name):
@@ -62,3 +64,14 @@ def write_enc_secret(file_name):
     with open(file_path, "w") as enc_file:
         enc_file.write(enc_pair)
     return enc_token
+
+def main():
+    parser = argparse.ArgumentParser(description="Handle encrypted secrets.")
+    parser.add_argument("file_name", help="Name of the file to store/retrieve the encrypted secret")
+    args = parser.parse_args()
+
+    secret = get_enc_secret(args.file_name)
+    print("Your secret is:", secret)
+
+if __name__ == "__main__":
+    main()
