@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "encrpytion-documentation"
+name = "main"
 version = "0.1.0"
 description = ""
 authors = ["Barrett <barrettbobilin@gmail.com>"]
