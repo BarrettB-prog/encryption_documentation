@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "main"
-version = "0.1.1"
+name = "EncryptDocumentation"
+version = "0.1.2"
 description = ""
 authors = ["Barrett <barrettbobilin@gmail.com>"]
 readme = "README.md"
